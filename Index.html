@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calci {
+            align-items: center;
+            border: 5px 5px 5px 5px white;
+            box-shadow: 5px 5px 5px white;
+            /* background-image: url(https://wallpapercave.com/wp/wp7513477.jpg); */
+            background-repeat: no-repeat;
+            background-position: center;
+
+            margin-bottom: 8px;
+            padding-bottom: 12px;
+
+        }
+
+        .cl {
+            align-items: center;
+            width: 400px;
+            box-shadow: -5px -5px 5px black;
+            /* padding-bottom: 1px; */
+
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .calcu {
+            width: 400px;
+            box-shadow: 5px 5px 5px black;
+            padding-bottom: 5px;
+            background: white;
+
+        }
+
+        .btn {
+            height: 80px;
+            width: 80px;
+            margin: 5px;
+            border-radius: 25px;
+            font-size: larger;
+            color: black;
+
+            box-shadow: 5px 5px 8px black;
+        }
+
+        #input {
+            box-shadow: 5px 5px 5px black;
+            width: 350px;
+            height: 50px;
+            margin: 20px;
+            border-radius: 20px;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center" id="text">CALCULATOR</h1>
+    <div align="Center" class="calci">
+        <div class="cl">
+            <div class="calcu">
+                <form name="h1">
+                    <input type="text" name="ab" id="input">
+                    <br>
+                    
+                    <input type="button" class="btn" value="AC" onclick="h1.ab.value = ' '">
+                    <input type="button" class="btn" value="C" onclick="h1.ab.value = '0'">
+                    <!-- <button onclick="backspace()">DLT</button> -->
+                    <input type="button" class="btn" value="%" onclick="h1.ab.value += '%' ">
+                    <input type="button" class="btn" value="+" onclick="h1.ab.value += '+' "><br>
+                    <input type="button" class="btn" value="7" onclick="h1.ab.value += '7' ">
+                    <input type="button" class="btn" value="8" onclick="h1.ab.value += '8' ">
+                    <input type="button" class="btn" value="9" onclick="h1.ab.value += '9' ">
+                    <input type="button" class="btn" value="-" onclick="h1.ab.value += '-' "><br>
+                    <input type="button" class="btn" value="4" onclick="h1.ab.value += '4' ">
+                    <input type="button" class="btn" value="5" onclick="h1.ab.value += '5' ">
+                    <input type="button" class="btn" value="6" onclick="h1.ab.value += '6' ">
+                    <input type="button" class="btn" value="X" onclick="h1.ab.value += '*' "><br>
+                    <input type="button" class="btn" value="1" onclick="h1.ab.value += '1' ">
+                    <input type="button" class="btn" value="2" onclick="h1.ab.value += '2' ">
+                    <input type="button" class="btn" value="3" onclick="h1.ab.value += '3' ">
+                    <input type="button" class="btn" value="/" onclick="h1.ab.value += '/' "><br>
+                    <input type="button" class="btn" value="0" onclick="h1.ab.value += '0' ">
+                    <input type="button" class="btn" value="." onclick="h1.ab.value += '.' ">
+                    <input type="button" class="btn" value="e" onclick="h1.ab.value += '2.71828183' ">
+                    <input type="button" class="btn" value="=" onclick="h1.ab.value = eval(h1.ab.value) ">
+                    
+
+
+                    <!-- <button class="btn" onclick="1.ab.value+='1'">AC</button>
+                <button class="btn">C</button>
+                <button class="btn">%</button>
+                <button class="btn">+</button><br>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">-</button><br>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">X</button><br>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">/</button><br>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn">+/-</button>
+                <button class="btn">=</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+       
+       function backspace(){
+           document.getElementById('text').style.background = "blue";
+           let string = document.getElementById('input').innerHTML;
+              
+              string = string.substring(0,string.length-1);
+          
+       }
+
+
+    </script>
+</body>
+
+</html>
